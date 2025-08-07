@@ -31,7 +31,7 @@ class SignInScreen extends StatelessWidget with Validator {
 
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(state.message),
+                content: Text(state.message, style: theme.textTheme.labelSmall),
                 backgroundColor: Colors.red,
               ),
             );
